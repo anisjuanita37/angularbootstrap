@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularbootstrap';
+  data = [];
+  // constructor(private http: HttpClient) {
+  //   this.http.get('http://localhost:8888/api/').subscribe(data => {
+  //   this.data.push(data);
+  //   console.log(this.data);
+   
+    
+  //   }, error => console.error(error));
+  
+  // }
+  
+  
 }
